@@ -11,6 +11,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<h1>Found Pairs: {{totalMatches}}</h1>
+            <h2>Attempts: {{attempts}}
 		</div>
 		<div class="row text-center">
 			<div class="col-sm-10 col-sm-offset-1">
@@ -29,7 +30,8 @@
 				
 				<div class="alert alert-success" ng-show="victory">
 					<h1>You are victorious, However it took you a ridiculous {{attempts}} attemps to win. Perhaps you should focus on your memory rather than drinking <a href="http://freedrinkpubs.co.uk/register" target="_blank">Claim your free Pint</a></h1>
-				</div>
+				    <input type="button" value="Reload Page" onClick="window.location.reload()">
+                </div>
 				
 			</div>
 		</div>
