@@ -31,7 +31,7 @@ app.service('GameService', function () {
 				title: 'Hammer',
 				url: imgRoot + 'flat-hammer.png',
 			}, {
-				title: 'Guantlet',
+				title: 'Gauntlet',
 				url: imgRoot + 'mailed-fist.png',
 			}, {
 				title: 'Meat',
