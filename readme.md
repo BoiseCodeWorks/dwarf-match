@@ -2,26 +2,20 @@
 
 ---
 
-In this project you will be building an angular controller for
-a familiar card game with a fantasy twist!
+In this project you will be building an angular controller for a familiar card game with a fantasy twist!
 
-Most of the legwork has already been completed,
-You don't need to worry about how the cards animate,
-or putting the cards on the screen. All we need to
-worry about is the game logic and telling the cards
-when to flip over.
+Most of the legwork has already been completed, you don't need to worry about how the cards animate, or 
+putting the cards on the screen. all we need to worry about is the game logic and telling the cards when to flip over.
 
 ---
 
-Loading up our game as-is will simply display a grid
-of face down cards. Clicking on them doesn't do anything.
-Let's change that!
+Loading up our game as-is will simply display a grid of face down cards. Clicking on them doesn't do anything. __Let's change that!__
 
-1. Lets open up the index.html and take a look
+1. Let's open up the index.html and take a look
 at how our cards are displayed
   * _Hint: check the card class_
 2. We have an idea of how to flip the card now,
-but we have some groundwork to lay first. Lets open up
+but we have some groundwork to lay first. Let's open up
 game-controller.js and follow the first comment
 
 ---
@@ -35,11 +29,11 @@ at the resetCards function?
 2. Now that we have a few new functions to play with, let's start
 putting them together. We're going to be working in our selectCard function for
 the next part.
-  1. After we flip our card lets make an if statement that asks
+  1. After we flip our card let's make an if statement that asks
   if we've assigned anything to our first scoped card variable
   2. if there isn't, let's store our current card there and return
   3. if there is then we should see if our second scoped card variable has anything
-  4. if it doesn't, then lets fill it with our currently selected card
+  4. if it doesn't, then let's fill it with our currently selected card
   and check to see if our cards are a match, thankfully
   we already wrote a function to test exactly this!
   5. if there's a match we should reset our selected cards
