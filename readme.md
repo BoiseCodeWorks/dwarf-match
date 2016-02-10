@@ -19,7 +19,7 @@ Let's change that!
 
 1. Lets open up the index.html and take a look
 at how our cards are displayed
-..* _Hint: check the card class_
+  * _Hint: check the card class_
 2. We have an idea of how to flip the card now,
 but we have some groundwork to lay first. Lets open up
 game-controller.js and follow the first comment
