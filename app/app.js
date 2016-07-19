@@ -1,1 +1,5 @@
-var app = angular.module('dwarfMatch', []);
+;(function () {
+
+	angular.module('dwarfMatch', [])
+
+}())
