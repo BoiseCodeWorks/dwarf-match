@@ -79,20 +79,20 @@ is face up. If it is, just return!
 Now that we can't select face up cards, let's fix having too many cards face up at once.
 
 An easy way to fix this is to create some temporary variables inside our `selectCard()` function that store
-the current scoped card selections right before our `$timeout()`. Then we move our `resetCards()` outside of `$timeout()` so
-it executes immediately. Doing this frees our scoped card selections while letting the `$timeout` flip our cards without needing
-to worry about which cards are currently selected on scope.
+the current card selections right before our `$timeout()`. Then we move our `resetCards()` outside of `$timeout()` so
+it executes immediately. Doing this frees our card selections while letting the `$timeout` flip our cards without needing
+to worry about which cards are currently selected.
 
 An example:
 ```javascript
-var myLocalVar = $scope.myScopedVar;
+var myLocalVar = gc.myVar;
 $timeout(function() {
     myLocalVar.property = bool;
 }, 1000);
-$scope.resetFunction();
+gc.resetFunction();
 ```
 in the example `resetFunction()` will execute before the code inside of `$timeout()` which is fine because that instance
-of myLocalVar can't be altered and will execute regardless of what `myScopedVar` becomes.
+of myLocalVar can't be altered and will execute regardless of what `myVar` becomes.
   
 ---
 
