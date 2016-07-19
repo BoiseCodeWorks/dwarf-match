@@ -46,13 +46,12 @@
       this.getDeck = function () {
         var pairs = shuffle(new Deck().cards).concat(shuffle(new Deck().cards))
         var shuffled = shuffle(shuffle(pairs))
-
         return shuffled
       }
 
       function shuffle (deck) {
-        for (var j, x, i = deck.length; i; j = Math.floor(Math.random() * i), x = deck[--i], deck[i] = deck[j], deck[j] = x)
-          return deck
+        for (var j, x, i = deck.length; i; j = Math.floor(Math.random() * i), x = deck[--i], deck[i] = deck[j], deck[j] = x) {}
+        return deck
       }
     })
 }())
