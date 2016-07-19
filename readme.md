@@ -12,7 +12,7 @@ putting the cards on the screen. all we need to worry about is the game logic an
 ###Step 1. Flipping Cards
 Loading up our game as-is will simply display a grid of face down cards. Clicking on them doesn't do anything. __Let's change that!__
 
-1. Let's open up the index.html and take a look
+1. Let's open up the game.html and take a look
 at how our cards are displayed
   * _Hint: check the card class_
 2. We have an idea of how to flip the card now,
