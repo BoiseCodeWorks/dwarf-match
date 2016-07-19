@@ -9,6 +9,7 @@ putting the cards on the screen. all we need to worry about is the game logic an
 
 ---
 
+###Step 1. Flipping Cards
 Loading up our game as-is will simply display a grid of face down cards. Clicking on them doesn't do anything. __Let's change that!__
 
 1. Let's open up the index.html and take a look
@@ -20,19 +21,23 @@ game-controller.js and follow the first comment
 
 ---
 
+###Step 2. Adding Flip Control
 Fancy! Now we've got our cards flipping over, but we've
 created two new problems, we can flip over too many at once
 and they won't flip back! Let's take care of the former first.
 
-1. Back into game-controller.js we go! Why don't we take a look
+Back into game-controller.js we go! Why don't we take a look
 at the resetCards function?
-2. Now that we have a few new functions to play with, let's start
-putting them together. We're going to be working in our selectCard function for
-the next part.
+
+We have a few functions to play with, let's start by thinking about the order in
+which functions should run and then on putting all of them together.
+
+
+###Step 3. selectCard 
   1. After we flip our card let's make an if statement that asks
-  if we've assigned anything to our first scoped card variable
+  if we've assigned anything to our first card variable
   2. if there isn't, let's store our current card there and return
-  3. if there is then we should see if our second scoped card variable has anything
+  3. if there is then we should see if our second card variable has anything
   4. if it doesn't, then let's fill it with our currently selected card
   and check to see if our cards are a match, thankfully
   we already wrote a function to test exactly this!
@@ -63,13 +68,13 @@ Let's wrap up our last bit of code setting the cards.show in a `$timeout()` and 
 
 ---
 
+###Step 4. Bug Fixes
 Alright! The game is mostly functional, but you may have noticed some ~~bugs~~ _features_, such as being able to flip
 our matched cards back over, or being able to flip too many cards at once.
 
 We can fix both of these issues pretty easily, to prevent selecting cards that are already flipped face up
-we can simply wrap our code in `selectCard()` inside of an if statement that checks if the card being passed to `selectCard()`
-isn't face up. If it isn't, execute our code! If it is, then do nothing!
-  * _Hint: Remember that `!` means `is not`_
+we can simply short-circut the `selectCard` function with an if statement that checks if the card being passed to `selectCard()`
+is face up. If it is, just return!
   
 Now that we can't select face up cards, let's fix having too many cards face up at once.
 
@@ -91,6 +96,7 @@ of myLocalVar can't be altered and will execute regardless of what `myScopedVar`
   
 ---
 
+###Step 5. Victory Conditions
 Now the game functions pretty well, but we don't have a win condition. Remember that victory boolean we setup earlier?
 Time to put it to use!
 
@@ -101,4 +107,4 @@ a final run!
 
 ---
 
-If you run into any problems be sure to check your syntax! Spelling Errors and missing Curly Braces can sneak by even the most astute coder!
+If you run into any problems be sure to check your syntax! `Always keep your dev tools open` debugging without the dev tools is next to impossible. Also remember that spelling errors and missing Curly Braces can sneak by even the most astute coder!
