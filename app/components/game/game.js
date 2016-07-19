@@ -11,7 +11,7 @@
     // This is a freebie we are using the GameService to help keep our controller clean. The GameServie will be in charge of creating and shuffling the deck.
     gc.deck = GameService.getDeck()
 
-    // Create two card variables on gc. These will be responsible
+    // Create two card variables. These will be responsible
     // for keeping track of our selections as we click cards.
 
     // Next we need to initate a few more variables on gc for later use
