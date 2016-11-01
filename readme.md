@@ -17,7 +17,7 @@ at how our cards are displayed
   * _Hint: check the card class_
 2. We have an idea of how to flip the card now,
 but we have some groundwork to lay first. Let's open up
-game-controller.js and follow the first comment
+game.js and follow the first comment
 
 ---
 
@@ -26,7 +26,7 @@ Fancy! Now we've got our cards flipping over, but we've
 created two new problems, we can flip over too many at once
 and they won't flip back! Let's take care of the former first.
 
-Back into game-controller.js we go! Why don't we take a look
+Back into game.js we go! Why don't we take a look
 at the resetCards function?
 
 We have a few functions to play with, let's start by thinking about the order in
@@ -100,7 +100,7 @@ of myLocalVar can't be altered and will execute regardless of what `myVar` becom
 Now the game functions pretty well, but we don't have a win condition. Remember that victory boolean we setup earlier?
 Time to put it to use!
 
-Let's dive back into game-controller.js and look at the next set of comments.
+Let's dive back into game.js and look at the next set of comments.
 
 Our new `checkVictory()` function would probably work best if called when we have a match. Insert it and let's give the game
 a final run!
