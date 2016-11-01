@@ -17,7 +17,7 @@
     // Next we need to initate a few more variables on gc for later use
     // Let's add variables for tracking the number of guesses (pairs flipped),
     // for the total number of correct guesses (pairs matched) and finally a
-    // victory boolean to let our controller know if we've won. Refer to the index.html
+    // victory boolean to let our controller know if we've won. Refer to the game.html
     // for variable names
 
     // Next write a selectCard function on gc that accepts a card object on click and
